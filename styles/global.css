@@ -1,0 +1,70 @@
+html {
+    font-family: "Lato",sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+html, body, main, #___gatsby, #gatsby-focus-wrapper {
+    height: 100%;
+}
+
+body {
+    letter-spacing: .1em;
+    line-height: 1.5;
+    position: relative;
+}
+img {
+    width: 100%;
+}
+header {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    padding: 15px 15px 12px 12px;
+    background: rgba(4, 51, 113, .8);
+    z-index: 9;
+}
+section {
+    padding: 1em;
+    background: rgba(4, 51, 113, .9);
+    color: #dddddd;
+}
+section h1 {
+    color: #fff;
+}
+.fixed {
+    position: fixed;
+}
+.parallax {
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax h1, .parallax h2 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.bg1, .bg2 {
+    height: 100%;
+    min-height: 100%;
+}
+
+.bg1 {
+    background-image: url("http://armstronggirlssoccer.com/images/AHS-5893.jpg");   
+}
+.bg2 {
+    background-image: url("http://armstronggirlssoccer.com/images/emily.jpg");   
+}

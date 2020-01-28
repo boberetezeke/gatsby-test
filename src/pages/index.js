@@ -32,13 +32,13 @@ export default () => {
     return (
         <main>
             <div className="bg1 parallax"></div>
-            <section id="menu"> <h1>Congrats Seniors!</h1> </section>
+            <section id="menu"> <h1>Home</h1> </section>
             <div className="bg2 parallax"> </div>
-            <section> <h1>Emily</h1> </section> 
+            <section> <h1>About / Games</h1> </section> 
             <div className="bg3 parallax"> </div>
-            <section> <h1>Hannah</h1> </section> 
+            <section> <h1>Blog</h1> </section> 
             <div className="bg4 parallax"> </div>
-            <section> <h1>Jessica</h1> </section> 
+            <section> <h1>Contact</h1> </section> 
         </main>
      )
 }

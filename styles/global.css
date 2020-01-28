@@ -23,16 +23,16 @@ header {
     width: 80px;
     height: 80px;
     padding: 15px 15px 12px 12px;
-    background: rgba(4, 51, 113, .8);
+    background:white;
     z-index: 9;
 }
 section {
     padding: 1em;
-    background: rgba(4, 51, 113, .9);
-    color: #dddddd;
+    background: white;
+    color: 
 }
 section h1 {
-    color: #fff;
+    color: black;
 }
 .parallax {
     position: relative;
@@ -60,14 +60,14 @@ section h1 {
 }
 
 .bg1 {
-    background-image: url("http://armstronggirlssoccer.com/images/AHS-5893.jpg");   
+    background-image: url("../src/images/cropped-cropped-logo_white_background.png");   
 }
 .bg2 {
-    background-image: url("http://armstronggirlssoccer.com/images/emily.jpg");   
+    background-image: url("../src/images/pexels-photo-278888-2000x1200.jpeg");   
 }
 .bg3 {
-    background-image: url("http://armstronggirlssoccer.com/images/hannah.jpg");   
+    background-image: url("../src/images/roll-the-dice-craps-board-game-points-122427-2000x1200.jpeg");   
 }
 .bg4 {
-    background-image: url("http://armstronggirlssoccer.com/images/jessica.jpg");   
+    background-image: url("../src/images/chess-figure-game-play-163427-2000x1200.jpeg");   
 }

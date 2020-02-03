@@ -1,73 +1,214 @@
 html {
-    font-family: "Lato",sans-serif;
-    font-weight: 400;
-    text-align: center;
-    color: white;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	text-align: center;
+	color: white;
 }
-html, body, main, #___gatsby, #gatsby-focus-wrapper {
-    height: 100%;
+html,
+body,
+main,
+#___gatsby,
+#gatsby-focus-wrapper {
+	height: 100%;
 }
 
 body {
-    letter-spacing: .1em;
-    line-height: 1.5;
-    position: relative;
+	line-height: 1.5;
+	position: relative;
+	font-family: "Libre Franklin", sans-serif;
 }
 img {
-    width: 100%;
+	width: 100%;
 }
 header {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 80px;
-    height: 80px;
-    padding: 15px 15px 12px 12px;
-    background:white;
-    z-index: 9;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	width: 80px;
+	height: 80px;
+	padding: 15px 15px 12px 12px;
+	background: white;
+	z-index: 9;
 }
 section {
-    padding: 1em;
-    background: white;
-    color: black;
+	padding: 1em;
+	background: white;
+	color: black;
 }
 section h1 {
-    color: black;
+	color: black;
 }
 .parallax {
-    position: relative;
-    overflow: hidden;
-    z-index: -1;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .parallax section {
-    position: fixed;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    font-size: 2em;
-    font-weight: 600;
-    letter-spacing: .25em;
-    text-transform: uppercase;
-    color: #ffffff;
+	position: fixed;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	font-size: 2em;
+	font-weight: 600;
+	letter-spacing: 0.25em;
+	text-transform: uppercase;
+	color: #ffffff;
 }
-.bg1, .bg2, .bg3, .bg4 {
-    height: 100%;
-    min-height: 100%;
+.bg1,
+.bg2,
+.bg3,
+.bg4 {
+	height: 100%;
+	min-height: 100%;
 }
 
 .bg1 {
-    background-image: url("../src/images/cropped-cropped-logo_white_background.png");   
+	background-image: url("../src/images/cropped-cropped-logo_white_background.png");
+}
+section#menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: -72px;
+	position: relative;
+	border-bottom: 1px solid #eeeeee;
+	padding: 1.5em 0;
+}
+section#menu.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: auto;
+}
+#logo .logo {
+	position: absolute;
+	margin-top: -290px;
+	margin-left: 19%;
+}
+#logo .logo img {
+	width: 200px;
+	height: 200px;
+}
+nav.main {
+	width: 100%;
+	padding: 0 20%;
+}
+nav.main ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+nav.main li {
+	display: inline-block;
+}
+.menu-trigger {
+	margin: 0 auto;
+	display: block;
+	-webkit-appearance: none;
+	border: none;
+	background: none;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+@media (min-width: 768px) {
+	.menu-trigger {
+		display: none;
+	}
+	.panel {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+@media (max-width: 768px) {
+	nav.main ul {
+		display: none;
+	}
+	nav.main ul.show {
+		display: block;
+	}
+	#menu .logo {
+		margin-top: -225px;
+	}
+	nav.main {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	nav.main li {
+		display: block;
+		padding: 6px 0;
+	}
+	nav.main li a {
+		padding-left: 0;
+	}
+}
+nav.main a {
+	color: #222;
+	font-weight: 600;
+	font-size: 0.875rem;
+	letter-spacing: normal;
+	padding: 1em 1.25em;
+}
+nav.main li:first-child a {
+	padding-left: 0;
+}
+.bg1:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 250px;
+	bottom: 0;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 .bg2 {
-    background-image: url("../src/images/pexels-photo-278888-2000x1200.jpeg");   
+	background-image: url("../src/images/pexels-photo-278888-2000x1200.jpeg");
 }
 .bg3 {
-    background-image: url("../src/images/roll-the-dice-craps-board-game-points-122427-2000x1200.jpeg");   
+	background-image: url("../src/images/roll-the-dice-craps-board-game-points-122427-2000x1200.jpeg");
 }
 .bg4 {
-    background-image: url("../src/images/chess-figure-game-play-163427-2000x1200.jpeg");   
+	background-image: url("../src/images/chess-figure-game-play-163427-2000x1200.jpeg");
+}
+
+.panel {
+	width: 100%;
+	padding: 0 5%;
+	padding-bottom: 4.5em;
+	padding-top: 6em;
+}
+@media (min-width: 768px) {
+	.panel {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+.panel-header {
+}
+.panel-content {
+}
+@media (min-width: 768px) {
+	.panel-content .wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.entry-header {
+	width: 60%;
+}
+.entry-title {
+	color: #222;
+	font-size: 0.875rem;
+	font-weight: 800;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+.entry-content {
+	width: 100%;
+}
+.entry-content p {
 }

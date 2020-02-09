@@ -1,17 +1,20 @@
 import React from "react"
 
-const FooterSection = () => {
+const ContactSection = () => {
     return (
         <section className="panel">
           <div className="panel-content">
             <div className="wrap">
               <div className="entry-header">
-                <h2 className="entry-title">Stub</h2>
+                <h2 className="entry-title">Contact</h2>
               </div>
               <div className="entry-content">
-                <p>About This Site</p>
                 <p>
-                  2018 Sortilege
+                  Follow{" "}
+                  <a href="https://twitter.com/hewhocutsdown">
+                    @hewhocutsdown{" "}
+                  </a>
+                  on Twitter or Github.
                 </p>
               </div>
             </div>
@@ -20,4 +23,4 @@ const FooterSection = () => {
     )
 }
 
-export default FooterSection
+export default ContactSection

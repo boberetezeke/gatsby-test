@@ -1,23 +1,30 @@
 import $ from 'jquery'
 
+let windowScrolltop = 0;
+let distance = 0;
+
 export const handleScroll = () => {
-  let menu = document.getElementById("menu")
-  let scrollTop = document.documentElement.scrollTop || document.body.scrollTop
-  let windowHeight = window.innerHeight
+  let menu = $('#menu')
+  let windowScrolltop = $(window).scrollTop();
 
-  var $el = $("#menu")
-  let topPosition = scrollTop - parseInt($el.css("margin-top"), 10)
-
-  if (topPosition > windowHeight) {
-    $el.addClass("fixed")
-  }
-  if (topPosition + $el.outerHeight() <= windowHeight) {
-    $el.removeClass("fixed")
+  if ( windowScrolltop >= distance ) {
+    menu.addClass("fixed")
+  } else {
+    menu.removeClass("fixed")
   }
 }
 
+export const handleResize = () => {
+  let menu = $('#menu')
+  distance = menu.offset().top;
+}
+
 export const handleScrollEffect = () => {
+  window.addEventListener("resize", handleResize)
+  window.dispatchEvent(new Event('resize'));
+
   window.addEventListener("scroll", handleScroll)
+
   return function cleanup() {
       window.removeEventListener("scroll", handleScroll)
   }

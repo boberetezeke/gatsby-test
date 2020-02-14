@@ -1,9 +1,9 @@
 import React, { useEffect } from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "../../styles/global.css"
-import Menu from "./menu"
-import ContactSection from "./sections/contact_section"
-import FooterSection from "./sections/footer_section"
+import Menu from "../components/menu"
+import ContactSection from "../components/contact_section"
+import FooterSection from "../components/footer_section"
 import  { handleScrollEffect } from "../lib/handle_scroll"
 
 export default () => {

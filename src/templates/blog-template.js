@@ -1,8 +1,8 @@
 import React from "react";
 //import Helmet from "react-helmet";
-import BlogEntry from "../pages/sections/blog_entry"
-import Menu from "../pages/menu"
-import FooterSection from "../pages/sections/footer_section"
+import BlogEntry from "../components/blog_entry"
+import Menu from "../components/menu"
+import FooterSection from "../components/footer_section"
 
 export default function Template({
   data 

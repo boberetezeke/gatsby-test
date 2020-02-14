@@ -1,11 +1,11 @@
 import React, { useEffect } from "react"
-import Menu from "./menu"
-import HomeSection from "./sections/home_section"
-import AboutSection from "./sections/about_section"
-import GamesSection from "./sections/games_section"
-import BlogSection from "./sections/blog_section"
-import ContactSection from "./sections/contact_section"
-import FooterSection from "./sections/footer_section"
+import Menu from "../components/menu"
+import HomeSection from "../components/home_section"
+import AboutSection from "../components/about_section"
+import GamesSection from "../components/games_section"
+import BlogSection from "../components/blog_section"
+import ContactSection from "../components/contact_section"
+import FooterSection from "../components/footer_section"
 import  { handleScrollEffect } from "../lib/handle_scroll"
 
 export default ({data}) => {

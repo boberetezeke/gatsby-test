@@ -10,7 +10,7 @@ export default () => {
   useEffect(handleScrollEffect)
 
   return (
-    <main>
+    <main className="short">
       <div className="bg1 parallax"></div>
       <section id="logo">
         <a href="http://sortilege.online/" className="logo">

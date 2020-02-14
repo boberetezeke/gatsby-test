@@ -6,12 +6,12 @@ import BlogSection from "./sections/blog_section"
 import FooterSection from "./sections/footer_section"
 import  { handleScrollEffect } from "../lib/handle_scroll"
 
-
-export default () => {
+export default ({data}) => {
   useEffect(handleScrollEffect)
+  const { edges: posts } = data.allMarkdownRemark;
 
   return (
-    <main>
+    <main className="short">
       <div className="bg1 parallax"></div>
       <section id="logo">
         <a href="http://sortilege.online/" className="logo">
@@ -21,8 +21,9 @@ export default () => {
       <section id="menu">
         <Menu/>
       </section>
+
       <section className="panel">
-        <BlogSection/>
+        <BlogSection posts={posts}/>
       </section>
       <section>
         <FooterSection/>
@@ -30,3 +31,21 @@ export default () => {
     </main>
   )
 }
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            title
+            date
+            path
+          }
+        }
+      }
+    }
+  }
+`;

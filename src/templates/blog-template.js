@@ -13,7 +13,7 @@ export default function Template({
       <div className="bg1 parallax"></div>
       <section id="logo">
         <a href="http://sortilege.online/" className="logo">
-          <img src="http://sortilege.online/wp-content/uploads/2018/05/cropped-Sortilege-Logo-2.png" />
+          <img src="/cropped-Sortilege-Logo-2.png" />
         </a>
       </section>
       <section id="menu">

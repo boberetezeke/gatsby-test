@@ -6,6 +6,7 @@ import BlogSection from "./sections/blog_section"
 import FooterSection from "./sections/footer_section"
 import  { handleScrollEffect } from "../lib/handle_scroll"
 
+
 export default () => {
   useEffect(handleScrollEffect)
 

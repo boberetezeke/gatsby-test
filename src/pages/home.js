@@ -10,7 +10,7 @@ import ContactSection from "./sections/contact_section"
 import FooterSection from "./sections/footer_section"
 import  { handleScrollEffect } from "../lib/handle_scroll"
 
-export default () => {
+export default ({posts}) => {
   useEffect(handleScrollEffect)
 
   return (
@@ -36,7 +36,7 @@ export default () => {
       </section>
       <div className="bg3 parallax"> </div>
       <section className="panel">
-        <BlogSection/>
+        <BlogSection posts={posts}/>
       </section>
       <div className="bg4 parallax"> </div>
       <section>
@@ -48,3 +48,4 @@ export default () => {
     </main>
   )
 }
+

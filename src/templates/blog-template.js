@@ -3,6 +3,7 @@ import React from "react";
 import BlogEntry from "../components/blog_entry"
 import Menu from "../components/menu"
 import FooterSection from "../components/footer_section"
+import { Link } from 'gatsby'
 
 export default function Template({
   data 
@@ -12,9 +13,9 @@ export default function Template({
     <main className="short">
       <div className="bg1 parallax"></div>
       <section id="logo">
-        <a href="http://sortilege.online/" className="logo">
+        <Link to="/" className="logo">
           <img src="/cropped-Sortilege-Logo-2.png" />
-        </a>
+        </Link>
       </section>
       <section id="menu">
         <Menu/>

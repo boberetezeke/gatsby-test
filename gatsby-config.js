@@ -5,5 +5,19 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {    
+    title: `Sortilege`,  
+  },
+
+  plugins: [    
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
+    {      
+        resolve: `gatsby-source-filesystem`,      
+        options: {        
+          path: `${__dirname}/src/pages/blog-entries`,        
+          name: 'pages',      
+        },    
+    }  
+  ],
 }

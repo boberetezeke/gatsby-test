@@ -1,28 +1,18 @@
 import React from 'react'
+import BlogEntry from "./blog_entry"
 
-const BlogSection = () => {
-    return (
-        <div className="panel-content">
-          <div className="wrap">
-            <div className="entry-header">
-              <h2 className="entry-title">Blog</h2>
-            </div>
-            <div className="entry-content">
-              <div>
-                <span>March 22nd, 2020</span>
-                <h2>
-                  <a href="">Some Header Link</a>
-                </h2>
-              </div>
-              <p>
-                Sortilege Incorporate designs physical &amp; digital card &amp;
-                board games centered around futurist themes such as ecology,
-                technology, and economics.
-              </p>
-            </div>
+const BlogSection = ({posts}) => {
+  return (
+      <div className="panel-content">
+        <div className="wrap">
+          <div className="entry-header">
+            <h2 className="entry-title">Blog</h2>
+          </div>
+          <div className="entry-content">
+            {posts.map(({ node: post }) => { return (<BlogEntry post={post}/>); })}
           </div>
         </div>
-    )
+      </div>
+  )
 }
-
 export default BlogSection
